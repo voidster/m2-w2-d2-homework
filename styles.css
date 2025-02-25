@@ -58,6 +58,10 @@ header {
   display: none;
 }
 
+nav {
+  z-index: 2;
+}
+
 /* Main */
 main {
   padding: 3em 6em 3em 5.5em;
@@ -172,6 +176,10 @@ footer #nondisclaimer .social .fa-instagram {
 /* Media Queries */
 
 @media (max-width: 576px) {
+  h1 {
+    max-width: 70%;
+    margin: auto;
+  }
   .card-wrapper {
     display: flex;
     justify-content: space-around;
@@ -257,7 +265,7 @@ footer #nondisclaimer .social .fa-instagram {
   }
 
   .main-header {
-    width: 80%;
+    width: 75%;
   }
 
   .navbar-toggler {
@@ -265,14 +273,14 @@ footer #nondisclaimer .social .fa-instagram {
     border: 1px solid grey;
     position: absolute;
     top: 7rem;
-    right: 14%;
+    right: 16%;
   }
 
-  ul {
+  header ul {
     padding: 0;
   }
 
-  ul li {
+  header ul li {
     width: 200px;
   }
 }
