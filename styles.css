@@ -1,19 +1,28 @@
 /* Header */
 header {
   width: 100%;
-  min-height: 400px;
-  padding-top: 3em;
+  min-height: 275px;
 }
-#home header {
-  background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-  background-size: 1500px;
+
+#home {
+  background: no-repeat white url(images/cliff_ocean.jpg);
+  background-size: 100% 400px;
 }
+
+#cliff {
+  background: no-repeat white url(images/forest_cliff.jpg);
+  background-size: 100% 400px;
+}
+
 .main-header {
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgba(38, 41, 61, 0.7);
   width: 700px;
   margin: 2em auto 0 auto;
   min-height: 100px;
   height: 100px;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 .main-header .logo img {
   width: 100px;
@@ -41,7 +50,7 @@ header {
 }
 .main-menu ul li a {
   text-decoration: none;
-  color: #888;
+  color: rgb(255, 255, 255);
 }
 .main-menu ul li a:hover {
   color: #9ed034;
@@ -56,6 +65,7 @@ header {
 
 .navbar-toggler {
   display: none;
+  color: white;
 }
 
 nav {
@@ -94,6 +104,55 @@ main h2 {
 .card > h2 {
   margin-bottom: 30px;
 }
+
+/* Cliff Main */
+#cliff main {
+  margin-top: 0;
+}
+
+#cliff main h2 {
+  color: #9ed034;
+}
+
+.cliffs-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 44px;
+}
+
+.cliff-row {
+  /* display: flex; */
+  /* justify-content: space-around; */
+  margin: 0 10% 2em 10%;
+}
+
+.cliff-card {
+  width: 47%;
+  text-align: center;
+  display: inline-block;
+}
+
+.cliff-card:first-of-type {
+  margin-right: 4%;
+}
+
+.cliff-title {
+  background-color: #852b1b;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.5em;
+  margin: 0;
+}
+
+.cliff-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Activities */
+
+/* Contact */
 
 /* Partners */
 section {
@@ -213,6 +272,10 @@ footer .social .fa {
     width: 80%;
     height: 80%;
   }
+
+  /* Activities */
+
+  /* Contact */
 }
 
 @media (max-width: 992px) {
@@ -222,13 +285,19 @@ footer .social .fa {
   }
   .main-menu {
     width: 200px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(38, 41, 61, 0.7);
     position: absolute;
-    right: 15%;
-    top: 11.2em;
+    right: 4%;
+    top: 6.25em;
   }
+
+  ul {
+    padding: 0;
+  }
+
   .main-menu ul li {
     border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+    width: 100%;
   }
   main {
     padding: 3em 1em 3em 1em;
@@ -248,8 +317,8 @@ footer .social .fa {
     display: block;
     border: 1px solid grey;
     position: absolute;
-    top: 7rem;
-    right: 16%;
+    top: 2.2rem;
+    right: 8%;
   }
 
   header ul {
@@ -259,6 +328,14 @@ footer .social .fa {
   header ul li {
     width: 200px;
   }
+
+  #mainNav {
+    margin-bottom: 0;
+  }
+
+  /* Activities */
+
+  /* Contact */
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -318,6 +395,10 @@ footer .social .fa {
     width: 70%;
     height: 70%;
   }
+
+  /* Activities */
+
+  /* Contact */
 }
 
 @media (max-width: 576px) {
@@ -363,4 +444,29 @@ footer .social .fa {
     width: 60%;
     height: 60%;
   }
+
+  /* Cliff */
+
+  .cliff-row {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin: 0 10% 2em 10%;
+    margin-bottom: 0;
+  }
+
+  .cliff-card {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .cliff-card:first-of-type {
+    margin-right: 0;
+  }
+
+  /* Activities */
+
+  /* Contact */
 }
